@@ -45,4 +45,7 @@ class GraphqlController < ApplicationController
 
     render json: { error: { message: e.message, backtrace: e.backtrace }, data: {} }, status: 500
   end
+
+  def index
+  end
 end
