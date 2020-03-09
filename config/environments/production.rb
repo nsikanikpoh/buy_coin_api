@@ -1,9 +1,11 @@
+require 'uglifier'
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-config.assets.js_compressor = Uglifier.new(harmony: true, mangle: false)
+config.assets.js_compressor = Uglifier.new(mangle: false)
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
